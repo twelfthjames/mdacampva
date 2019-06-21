@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mdacampva-photosite';
+  title = 'MDA Camp 2019';
+  year = '2019';
 }

@@ -1,0 +1,12 @@
+@import '../../../styles/base';
+
+#footer {
+  clear: both;
+  font-size: 0.6em;
+  margin: 2em 0;
+  position: relative;
+  color: lighten($color: $black, $amount: 20%);
+  text-decoration: uppercase;
+  letter-spacing: 2px;
+  text-align: right;
+}

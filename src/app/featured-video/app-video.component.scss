@@ -1,0 +1,36 @@
+@import '../../styles/base';
+
+#featured-video {
+  position: relative;
+  float: right;
+  left: 0;
+  top: 80px;
+  right: 50px;
+  width: 660px;
+  height: 415px;
+  border: 10px solid #fff;
+  box-shadow: 0px 3px 8px rgba($black, .3);
+  transform: rotate(2deg);
+
+  h2 {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-weight: 200;
+    color: lighten($black, 30%);
+    left: -115px;
+    letter-spacing: 2px;
+    top: 81px;
+  }
+}
+
+@include mq-mobile() {
+  #featured-video {
+    width: 80%;
+    height: auto;
+
+    iframe {
+      width: 100%;
+      max-height: 280px;
+    }
+  }
+}

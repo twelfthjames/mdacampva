@@ -1,0 +1,38 @@
+@import '../styles/base';
+
+#home-header {
+  background: url('/assets/img/groupfade.jpg') ;
+  background-position-x: 100%;
+  background-size: cover;
+  height: 650px;
+}
+
+#introduction {
+  float: left;
+  margin: 5em 0 0 0;
+  width: 520px;
+  letter-spacing: 2px;
+  line-height: 50px;
+  font-size: 1.5em;
+
+  &:after {
+    content: "";
+    display: block;
+    background: $gold;
+    width: 70%;
+    height: 10px;
+  }
+}
+
+#navigation {
+  margin: 1em 0;
+  float: left;
+  width: 520px;
+  clear: both;
+
+  ul {
+    li {
+      list-style-type: none;
+    }
+  }
+}
