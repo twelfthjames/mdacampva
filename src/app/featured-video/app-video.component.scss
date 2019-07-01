@@ -2,28 +2,48 @@
 
 #featured-video {
   position: relative;
-  float: right;
+  background-position: 50% 40%;
+  background-size: cover;
+  height: 600px;
   left: 0;
-  top: 80px;
+  top: 0;
   right: 50px;
-  width: 660px;
-  height: 415px;
-  border: 10px solid #fff;
-  box-shadow: 0px 3px 8px rgba($black, .3);
-  transform: rotate(2deg);
+  width: 100%;
 
   h2 {
-    position: absolute;
-    transform: rotate(-90deg);
+    position: relative;
+    z-index: 3;
     font-weight: 200;
-    color: lighten($black, 30%);
-    left: -115px;
+    text-align: center;
+    color: $white;
     letter-spacing: 2px;
-    top: 81px;
+    top: 60px;
+  }
+
+  #video-player {
+    position: absolute;
+    z-index: 3;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    top: 130px;
+    width: 650px;
+    height: 365px;
+  }
+
+  .video-bg {
+    background: linear-gradient(0deg, $black, rgba($black, 0.4));
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
-@include mq-mobile() {
+@include mq(mobile) {
   #featured-video {
     width: 80%;
     height: auto;

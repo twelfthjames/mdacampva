@@ -1,4 +1,6 @@
-<div id="featured-video">
-  <h2>2019 Recap Video</h2>
-  <iframe width="660" height="415" src="https://www.youtube.com/embed/7ek5c8Xe1B4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="featured-video"
+    [ngStyle]="{'background-image':'url(' + getVideoBg() +')'}">
+  <h2>Watch the 2019 Recap Video</h2>
+  <iframe id="video-player" src="https://www.youtube.com/embed/7ek5c8Xe1B4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="video-bg"></div>
 </div>

@@ -1,27 +1,11 @@
 @import '../styles/base';
 
-#home-header {
-  background: url('/assets/img/groupfade.jpg') ;
-  background-position-x: 100%;
-  background-size: cover;
-  height: 650px;
+.hide {
+  display: none;
 }
 
-#introduction {
-  float: left;
-  margin: 5em 0 0 0;
-  width: 520px;
-  letter-spacing: 2px;
-  line-height: 50px;
-  font-size: 1.5em;
-
-  &:after {
-    content: "";
-    display: block;
-    background: $gold;
-    width: 70%;
-    height: 10px;
-  }
+.show {
+  display: block;
 }
 
 #navigation {

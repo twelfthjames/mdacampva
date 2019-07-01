@@ -1,0 +1,19 @@
+#photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.photo {
+  display: inline-flex;
+  justify-content: top;
+  vertical-align: top;
+  align-self: flex-start;
+  flex-grow: 1;
+  width: 300px;
+  height: 100%;
+
+  img {
+    width: inherit;
+    justify-content: top;
+  }
+}

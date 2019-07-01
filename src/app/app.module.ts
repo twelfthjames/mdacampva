@@ -8,6 +8,8 @@ import { FooterComponent } from './universal-components/footer/app-footer.compon
 import { VideoComponent } from './featured-video/app-video.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { HomeComponent } from './app-home.component';
+import { AppCountdownComponent } from './app-countdown/app-countdown.component';
+import { PhotosComponent } from './photos/photos.component';
 
 const appRoutes: Routes = [
   { path: 'sponsors', component: SponsorsComponent },
@@ -21,7 +23,9 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     VideoComponent,
-    SponsorsComponent
+    SponsorsComponent,
+    AppCountdownComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,

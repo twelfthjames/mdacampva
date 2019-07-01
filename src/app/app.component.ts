@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'MDA Camp 2019';
   year = '2019';
+  assetsUrl: string;
+
+  isLoaded = true;
 }
